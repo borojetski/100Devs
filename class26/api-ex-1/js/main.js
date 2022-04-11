@@ -2,7 +2,7 @@
 document.querySelector('button').addEventListener('click', isMyVpnOn)
 
 function isMyVpnOn(){
-  const url = 'https://api.freegeoip.app/json/?apikey=65280b00-b974-11ec-8f2b-734bbb0b7ae8'
+  const url = 'https://api.freegeoip.app/json/?'
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
