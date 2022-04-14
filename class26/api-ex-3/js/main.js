@@ -9,6 +9,9 @@ function getFetch(){
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
+        document.querySelector('h2').innerText = `${data.name}`
+        document.querySelector('img').src = data.sprites.front_default
+        document.querySelector('h3').innerText = `Type: ${data.types[0].type.name}`
       })
       .catch(err => {
           console.log(`error ${err}`)
